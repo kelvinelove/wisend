@@ -8,7 +8,7 @@ WiSend is a secure money transfer platform that allows users to send money to th
 
 ## Live Demo
 
-You can try out a live demo of WiSend. The link will be added here once the site is published.
+You can try out a live demo of WiSend.
 
 [**WiSend Live Demo**](https://wisend.netlify.app)
 
@@ -33,7 +33,7 @@ Here are a few screenshots of the application in action. These will be updated w
 - **Dashboard**: Comprehensive dashboard with transfer statistics and quick actions
 - **Responsive Design**: Modern, mobile-friendly interface built with React and Tailwind CSS
 
-## Technology Stack
+## Techn Stack
 
 This project is built with:
 
@@ -55,7 +55,7 @@ This project is built with:
 
 ### Installation
 
-1. Clone the repository:
+1. Clone the repo:
 ```bash
 git clone https://github.com/kelvinelove/wisend.git
 cd wisend
