@@ -262,7 +262,7 @@ export const LoginForm: React.FC<LoginFormProps> = ({ onSwitchToSignup }) => {
 
         <Alert className="mt-4">
           <AlertDescription className="text-xs">
-            <strong>Demo Account:</strong> Use any email/password combination to sign in. This is a demo application.
+            <strong>Demo Account:</strong> Use any email/password combination to sign up then log in. This is a demo application.
           </AlertDescription>
         </Alert>
       </CardContent>
