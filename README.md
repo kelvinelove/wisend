@@ -1,6 +1,7 @@
 # WiSend - Secure Money Transfers
 
 A modern web application for secure money transfers, built by WiRemit.
+You can try out a [live demo of WiSend here](https://wisend.netlify.app).
 
 ## About WiSend
 

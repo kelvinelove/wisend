@@ -98,10 +98,10 @@ export const SignupForm: React.FC<SignupFormProps> = ({ onSwitchToLogin }) => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     const emailValidation = getEmailValidation();
     const passwordStrength = checkPasswordStrength(password);
-    
+
     if (!name.trim() || !email.trim() || !password.trim() || !confirmPassword.trim()) {
       toast({
         title: "Missing Information",
@@ -140,7 +140,7 @@ export const SignupForm: React.FC<SignupFormProps> = ({ onSwitchToLogin }) => {
 
     setIsLoading(true);
     const success = await signup(name, email, password);
-    
+
     if (success) {
       toast({
         title: "Welcome to WiSend!",
@@ -153,7 +153,7 @@ export const SignupForm: React.FC<SignupFormProps> = ({ onSwitchToLogin }) => {
         variant: "destructive"
       });
     }
-    
+
     setIsLoading(false);
   };
 
@@ -176,7 +176,7 @@ export const SignupForm: React.FC<SignupFormProps> = ({ onSwitchToLogin }) => {
           <div className="space-y-2">
             <Label htmlFor="name">Full Name</Label>
             <div className="relative">
-              <img src="/wire_white.png" alt="WiRemit Logo" className="absolute left-3 top-2 h-6 w-6 object-contain rounded-full bg-white/10" />
+              <User className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
               <Input
                 id="name"
                 type="text"
@@ -218,7 +218,7 @@ export const SignupForm: React.FC<SignupFormProps> = ({ onSwitchToLogin }) => {
               </div>
             )}
           </div>
-          
+
           <div className="space-y-2">
             <Label htmlFor="password">Password</Label>
             <div className="relative">
@@ -240,22 +240,21 @@ export const SignupForm: React.FC<SignupFormProps> = ({ onSwitchToLogin }) => {
                 {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
               </button>
             </div>
-            
+
             {/* Password Strength Meter */}
             {password && (
               <div className="space-y-2">
                 <div className="flex items-center justify-between text-sm">
                   <span>Password strength:</span>
-                  <span className={`font-medium ${
-                    passwordStrength.score <= 2 ? 'text-destructive' :
-                    passwordStrength.score <= 3 ? 'text-orange-500' :
-                    passwordStrength.score <= 4 ? 'text-yellow-600' : 'text-green-600'
-                  }`}>
+                  <span className={`font-medium ${passwordStrength.score <= 2 ? 'text-destructive' :
+                      passwordStrength.score <= 3 ? 'text-orange-500' :
+                        passwordStrength.score <= 4 ? 'text-yellow-600' : 'text-green-600'
+                    }`}>
                     {getPasswordStrengthText(passwordStrength.score)}
                   </span>
                 </div>
-                <Progress 
-                  value={passwordStrength.score * 20} 
+                <Progress
+                  value={passwordStrength.score * 20}
                   className="h-2"
                 />
                 <div className="text-xs text-muted-foreground">
@@ -298,8 +297,8 @@ export const SignupForm: React.FC<SignupFormProps> = ({ onSwitchToLogin }) => {
             )}
           </div>
 
-          <Button 
-            type="submit" 
+          <Button
+            type="submit"
             className="w-full bg-gradient-primary hover:opacity-90 transition-opacity"
             disabled={isLoading || !emailValidation.isValid || !passwordStrength.isValid || !passwordsMatch}
           >
@@ -313,7 +312,7 @@ export const SignupForm: React.FC<SignupFormProps> = ({ onSwitchToLogin }) => {
             )}
           </Button>
         </form>
-        
+
         <div className="mt-6 text-center text-sm">
           <span className="text-muted-foreground">Already have an account? </span>
           <button

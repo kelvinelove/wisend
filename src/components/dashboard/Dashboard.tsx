@@ -29,13 +29,13 @@ export const Dashboard: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-slate-50 to-background/80 dark:from-background dark:via-slate-900 dark:to-background/80">
-      {/* Header */}
+      {/* Header, I think ndichazoita a global one later. For now it's inline*/}
       <header className="bg-gradient-to-r from-primary/80 to-secondary/80 shadow-lg rounded-b-2xl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             <div className="flex items-center space-x-3">
               <div className="flex items-center justify-center w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full shadow-lg overflow-hidden">
-                <img src="/wire_white.png" alt="WiRemit Logo" className="w-10 h-10 object-contain" />
+                <img src="/wire_white.png" alt="WiSend Logo" className="w-10 h-10 object-contain" />
               </div>
               <div>
                 <h1 className="text-2xl font-extrabold text-white tracking-tight drop-shadow">WiSend</h1>
@@ -59,7 +59,7 @@ export const Dashboard: React.FC = () => {
               {/* User avatar/profile dropdown */}
               <div className="relative group">
                 <button className="flex items-center justify-center w-10 h-10 rounded-full bg-white/20 hover:bg-white/30 shadow focus:outline-none transition-all">
-                  <img src="/wire_white.png" alt="Profile" className="w-8 h-8 object-contain" />
+                  <User className="h-8 w-8 text-white" />
                 </button>
                 <div className="absolute right-0 mt-2 w-40 bg-white rounded-xl shadow-xl py-2 z-50 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 pointer-events-none group-hover:pointer-events-auto group-focus-within:pointer-events-auto transition-opacity">
                   <Link to="/profile" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded">Profile</Link>
@@ -126,7 +126,7 @@ export const Dashboard: React.FC = () => {
           <Card className="text-center shadow-lg border-none rounded-xl hover:scale-105 hover:shadow-2xl transition-transform">
             <CardContent className="p-6">
               <div className="flex items-center justify-center w-12 h-12 bg-gradient-secondary rounded-full mx-auto mb-3 shadow">
-                <img src="/wire_white.png" alt="WiRemit Logo" className="h-6 w-6 object-contain" />
+                <img src="/wire_white.png" alt="WiSend Logo" className="h-6 w-6 object-contain" />
               </div>
               <p className="text-sm text-muted-foreground">Transfers</p>
               <p className="text-2xl font-bold">12</p>
