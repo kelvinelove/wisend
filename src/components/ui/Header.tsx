@@ -24,7 +24,7 @@ export const Header: React.FC = () => {
     <header className="bg-gradient-to-r from-primary/80 to-secondary/80 shadow-lg rounded-b-2xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <div className="flex items-center space-x-3">
+          <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
             <div className="flex items-center justify-center w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full shadow-lg overflow-hidden">
               <img src="/wire_white.png" alt="WiSend Logo" className="w-10 h-10 object-contain" />
             </div>
@@ -32,7 +32,7 @@ export const Header: React.FC = () => {
               <h1 className="text-2xl font-extrabold text-white tracking-tight drop-shadow">WiSend</h1>
               <p className="text-xs text-white/80 font-medium">by WiRemit</p>
             </div>
-          </div>
+          </Link>
           
           <div className="flex items-center space-x-4">
             {lastUpdated && (
