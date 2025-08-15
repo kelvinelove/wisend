@@ -17,11 +17,11 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 220 15% 20%;
 
-    --primary: 214 84% 56%;
+    --primary: 225 86% 57%;
     --primary-foreground: 0 0% 100%;
     --primary-glow: 214 84% 70%;
 
-    --secondary: 160 84% 39%;
+    --secondary: 141 90% 56%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 240 4.8% 95.9%;
@@ -35,10 +35,10 @@ All colors MUST be HSL.
 
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
-    --ring: 214 84% 56%;
+    --ring: 225 86% 57%;
 
     /* Financial app specific colors */
-    --success: 160 84% 39%;
+    --success: 141 90% 56%;
     --success-foreground: 0 0% 100%;
     --warning: 38 92% 50%;
     --warning-foreground: 0 0% 100%;
@@ -46,15 +46,15 @@ All colors MUST be HSL.
     --info-foreground: 0 0% 100%;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(214 84% 56%), hsl(214 84% 70%));
-    --gradient-secondary: linear-gradient(135deg, hsl(160 84% 39%), hsl(160 84% 53%));
+    --gradient-primary: linear-gradient(135deg, hsl(225 86% 57%), hsl(214 84% 70%));
+    --gradient-secondary: linear-gradient(135deg, hsl(141 90% 56%), hsl(160 84% 53%));
     --gradient-accent: linear-gradient(135deg, hsl(25 95% 53%), hsl(25 95% 63%));
-    --gradient-hero: linear-gradient(135deg, hsl(214 84% 56%) 0%, hsl(160 84% 39%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(225 86% 57%) 0%, hsl(141 90% 56%) 100%);
     
     /* Shadows */
-    --shadow-soft: 0 2px 10px hsl(214 84% 56% / 0.1);
-    --shadow-medium: 0 8px 30px hsl(214 84% 56% / 0.15);
-    --shadow-strong: 0 20px 40px hsl(214 84% 56% / 0.2);
+    --shadow-soft: 0 2px 10px hsl(225 86% 57% / 0.1);
+    --shadow-medium: 0 8px 30px hsl(225 86% 57% / 0.15);
+    --shadow-strong: 0 20px 40px hsl(225 86% 57% / 0.2);
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -89,11 +89,11 @@ All colors MUST be HSL.
     --popover: 220 15% 10%;
     --popover-foreground: 240 10% 95%;
 
-    --primary: 214 84% 56%;
+    --primary: 225 86% 57%;
     --primary-foreground: 0 0% 100%;
     --primary-glow: 214 84% 70%;
 
-    --secondary: 160 84% 39%;
+    --secondary: 141 90% 56%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 220 15% 15%;
@@ -107,10 +107,10 @@ All colors MUST be HSL.
 
     --border: 220 15% 15%;
     --input: 220 15% 15%;
-    --ring: 214 84% 56%;
+    --ring: 225 86% 57%;
 
     /* Financial app specific colors - dark mode */
-    --success: 160 84% 39%;
+    --success: 141 90% 56%;
     --success-foreground: 0 0% 100%;
     --warning: 38 92% 50%;
     --warning-foreground: 0 0% 100%;
